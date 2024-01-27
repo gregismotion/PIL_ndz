@@ -51,18 +51,6 @@ def _downscale_surface_to_max(surface: Surface, max_diagonal: "natural_number"):
 	else:
 		return surface
 
-'''
-def _find_row_num(count: int) -> int:
-	for i in reversed(range(1, count)):
-		if count % i == 0:
-			return i
-def _get_grid(*images: type(Image)) -> ImageGrid:
-	count = len(images)
-	row_count = _find_row_num(count)
-	column_count = int(count / row_count)
-
-	return [[images[j+j*i] for j in range(column_count)] for i in range(row_count) ]
-'''
 def _find_row_num(count: int) -> int:
 	sqrt_count = math.sqrt(count)
 	return math.ceil(count / sqrt_count)
