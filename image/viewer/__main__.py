@@ -74,7 +74,6 @@ def _get_grid(*images: type(Image)) -> ImageGrid:
 def _surface_grid_into_surface(grid: SurfaceGrid) -> Surface:
 	final = Surface(grid.size)
 	y = 0
-	print(grid)
 	for row in grid:
 		height = 0
 		x = 0
